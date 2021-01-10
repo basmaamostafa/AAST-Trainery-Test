@@ -8,6 +8,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 import AdvisorProfile from "./Component/AdvisorProfile";
 import Search from "./Component/Search";
+import { ActionSheetProvider } from "@expo/react-native-action-sheet";
 
 const Stack = createStackNavigator();
 
@@ -57,6 +58,16 @@ export default class App extends Component {
     );
   }
 }
+
+// class AppContainer extends React.Component {
+//   render() {
+//     return (
+//       <ActionSheetProvider>
+//         <ConnectedApp />
+//       </ActionSheetProvider>
+//     );
+//   }
+// }
 
 // const styles = StyleSheet.create({
 //   container: {

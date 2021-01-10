@@ -33,7 +33,7 @@ const Drawer = createDrawerNavigator();
 
 export default class Explore extends Component {
   render() {
-    return <Session style={{ backgroundColor: "#ffffff" }} />;
+    // return <Search style={{ backgroundColor: "#ffffff" }} />;
 
     return (
       <Container style={{ marginBottom: 20, backgroundColor: "#ffffff" }}>

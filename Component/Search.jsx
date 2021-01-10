@@ -27,9 +27,8 @@ export class Search extends Component {
     super(props);
     this.state = {};
   }
-  
+
   render() {
-    
     return (
       <Container style={{ justifyContent: "center" }}>
         <Content style={{ marginTop: 40 }}>
@@ -59,7 +58,6 @@ export class Search extends Component {
                 // onPress={() => {
                 //   this.props.navigation.navigate("Search");
                 // }}
-                 
               >
                 <Text
                   style={{
