@@ -20,8 +20,11 @@ import {
 import CardAdvisor from "./CardAdvisor";
 import PromotedCard from "./PromotedCard";
 import CardCompany from "./CardCompany";
+import CardCoach from "./CardCoach";
 import { AdvisorProfile } from "./AdvisorProfile";
 import Search from "./Search";
+import Session from "./Session";
+// import {ActionSheetExample} from "./AppNavigator";
 import { NavigationContainer } from "@react-navigation/native";
 
 import { createDrawerNavigator } from "@react-navigation/drawer";
@@ -30,7 +33,7 @@ const Drawer = createDrawerNavigator();
 
 export default class Explore extends Component {
   render() {
-    return <Search style={{ backgroundColor: "#ffffff" }} />;
+    return <Session style={{ backgroundColor: "#ffffff" }} />;
 
     return (
       <Container style={{ marginBottom: 20, backgroundColor: "#ffffff" }}>
@@ -52,6 +55,7 @@ export default class Explore extends Component {
               />
             </Right>
           </Button>
+          <CardCoach />
           <CardAdvisor />
           <PromotedCard />
           <CardCompany />

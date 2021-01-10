@@ -3,6 +3,7 @@ import { StatusBar } from "expo-status-bar";
 import React, { Component } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import Explore from "./Component/Explore";
+import Session from "./Component/Session";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 import AdvisorProfile from "./Component/AdvisorProfile";
@@ -41,6 +42,15 @@ export default class App extends Component {
                 "none";
               },
             }}
+          />
+          <Stack.Screen
+            name="Career Coaching"
+            component={Session}
+            // options={{
+            //   header: () => {
+            //     "none";
+            //   },
+            // }}
           />
         </Stack.Navigator>
       </NavigationContainer>
