@@ -110,7 +110,7 @@ export default function (props) {
   return <AdvisorProfile {...props} navigation={navigation} />;
 }
 
-export class Profile extends Component {
+class Profile extends Component {
   render() {
     return (
       <View>

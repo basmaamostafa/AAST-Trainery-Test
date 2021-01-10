@@ -13,7 +13,7 @@ const Stack = createStackNavigator();
 export default class App extends Component {
   render() {
     return (
-      // <View style={styles.container}>
+
         <NavigationContainer>
           <Stack.Navigator>
             <Stack.Screen
@@ -36,7 +36,6 @@ export default class App extends Component {
             />
           </Stack.Navigator>
         </NavigationContainer>
-      // </View>
     );
   }
 }
