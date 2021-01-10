@@ -44,62 +44,64 @@ export class AdvisorProfile extends Component {
 
   render() {
     return (
-      <View style={{ marginBottom: 20, backgroundColor: "#ffffff" }}>
-        <View
-          style={{
-            marginTop: 50,
-          }}
-        >
-          <Thumbnail
+      <View>
+        <View style={{ marginBottom: 20, backgroundColor: "#ffffff" }}>
+          <View
             style={{
-              height: 60,
-              width: 60,
-              marginHorizontal: "40%",
+              marginTop: 50,
             }}
-            source={{
-              uri:
-                "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2Zlc3Npb25hbCUyMHdvbWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            }}
+          >
+            <Thumbnail
+              style={{
+                height: 60,
+                width: 60,
+                marginHorizontal: "40%",
+              }}
+              source={{
+                uri:
+                  "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2Zlc3Npb25hbCUyMHdvbWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+              }}
+            />
+            <Text
+              style={{
+                color: "#1E4274",
+                fontSize: 18,
+                fontWeight: "bold",
+                marginHorizontal: "25%",
+                marginVertical: 5,
+              }}
+            >
+              Dr. Rehab Elbadrawy
+            </Text>
+            <Text
+              note
+              style={{
+                color: "#1E4274",
+                fontSize: 14,
+                marginHorizontal: "31%",
+              }}
+            >
+              BIS Training advisor
+            </Text>
+          </View>
+
+          <SegmentedControlTab
+            tabsContainerStyle={styles.tabsContainerStyle}
+            tabStyle={styles.tabStyle}
+            tabTextStyle={styles.tabTextStyle}
+            activeTabStyle={styles.activeTabStyle}
+            activeTabTextStyle={styles.activeTabTextStyle}
+            selectedIndex={this.state.selectedIndex}
+            values={["Profile", "Opportunity"]}
+            onTabPress={this.handleIndexChange}
+            // onTabPress={handleCustomIndexSelect}
           />
-          <Text
-            style={{
-              color: "#1E4274",
-              fontSize: 18,
-              fontWeight: "bold",
-              marginHorizontal: "25%",
-              marginVertical: 5,
-            }}
-          >
-            Dr. Rehab Elbadrawy
-          </Text>
-          <Text
-            note
-            style={{
-              color: "#1E4274",
-              fontSize: 14,
-              marginHorizontal: "31%",
-            }}
-          >
-            BIS Training advisor
-          </Text>
+
+          {/* {customStyleIndex === 0 && <Text> Tab one</Text>} */}
+          {/* {customStyleIndex === 1 && <Text> Tab two</Text>} */}
+
+          <Profile />
         </View>
-
-        <SegmentedControlTab
-          tabsContainerStyle={styles.tabsContainerStyle}
-          tabStyle={styles.tabStyle}
-          tabTextStyle={styles.tabTextStyle}
-          activeTabStyle={styles.activeTabStyle}
-          activeTabTextStyle={styles.activeTabTextStyle}
-          selectedIndex={this.state.selectedIndex}
-          values={["Profile", "Opportunity"]}
-          onTabPress={this.handleIndexChange}
-          // onTabPress={handleCustomIndexSelect}
-        />
-
-        {/* {customStyleIndex === 0 && <Text> Tab one</Text>} */}
-        {/* {customStyleIndex === 1 && <Text> Tab two</Text>} */}
-
-        <Profile />
       </View>
     );
   }
