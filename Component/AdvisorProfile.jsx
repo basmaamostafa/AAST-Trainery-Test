@@ -1,5 +1,5 @@
 import React, { Component, useState } from "react";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, ScrollView } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { Feather } from "@expo/vector-icons";
 import CardCompany from "./CardCompany";
@@ -44,8 +44,14 @@ export class AdvisorProfile extends Component {
 
   render() {
     return (
-      <View>
-        <View style={{ marginBottom: 20, backgroundColor: "#ffffff" }}>
+      <ScrollView>
+        <View
+          style={{
+            marginBottom: 20,
+            backgroundColor: "#ffffff",
+            height: "100%",
+          }}
+        >
           <View
             style={{
               marginTop: 50,
@@ -102,7 +108,7 @@ export class AdvisorProfile extends Component {
 
           <Profile />
         </View>
-      </View>
+      </ScrollView>
     );
   }
 }

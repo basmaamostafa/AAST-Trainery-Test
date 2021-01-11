@@ -36,7 +36,7 @@ export default class Explore extends Component {
     // return <Search style={{ backgroundColor: "#ffffff" }} />;
 
     return (
-      <Container style={{ marginBottom: 20, backgroundColor: "#ffffff" }}>
+      <Container style={{ marginBottom: 20 }}>
         <Content style={{ marginTop: 50 }}>
           <Button
             transparent

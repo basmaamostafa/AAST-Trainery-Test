@@ -6,7 +6,7 @@ import Explore from "./Component/Explore";
 import Session from "./Component/Session";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
-import AdvisorProfile from "./Component/AdvisorProfile";
+import {AdvisorProfile} from "./Component/AdvisorProfile";
 import Search from "./Component/Search";
 import { ActionSheetProvider } from "@expo/react-native-action-sheet";
 
@@ -14,6 +14,7 @@ const Stack = createStackNavigator();
 
 export default class App extends Component {
   render() {
+    return <AdvisorProfile />;
     return (
       <NavigationContainer>
         <Stack.Navigator>
