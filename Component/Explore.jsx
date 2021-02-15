@@ -24,14 +24,16 @@ import CardCoach from "./CardCoach";
 import { AdvisorProfile } from "./AdvisorProfile";
 import Search from "./Search";
 import Session from "./Session";
+import { useNavigation } from "@react-navigation/native";
+
 // import {ActionSheetExample} from "./AppNavigator";
-import { NavigationContainer } from "@react-navigation/native";
+// import { NavigationContainer } from "@react-navigation/native";
 
-import { createDrawerNavigator } from "@react-navigation/drawer";
+// import { createDrawerNavigator } from "@react-navigation/drawer";
 
-const Drawer = createDrawerNavigator();
+// const Drawer = createDrawerNavigator();
 
-export default class Explore extends Component {
+export class Explore extends Component {
   render() {
     // return <Search style={{ backgroundColor: "#ffffff" }} />;
 
@@ -64,4 +66,8 @@ export default class Explore extends Component {
       </Container>
     );
   }
+}
+export default function (props) {
+  const navigation = useNavigation();
+  return <Explore {...props} navigation={navigation} />;
 }
