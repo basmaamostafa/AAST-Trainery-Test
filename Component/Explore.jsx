@@ -26,16 +26,9 @@ import Search from "./Search";
 import Session from "./Session";
 import { useNavigation } from "@react-navigation/native";
 
-// import {ActionSheetExample} from "./AppNavigator";
-// import { NavigationContainer } from "@react-navigation/native";
-
-// import { createDrawerNavigator } from "@react-navigation/drawer";
-
-// const Drawer = createDrawerNavigator();
-
 export class Explore extends Component {
   render() {
-    // return <Search style={{ backgroundColor: "#ffffff" }} />;
+    return <Search style={{ backgroundColor: "#ffffff" }} />;
 
     return (
       <Container style={{ marginBottom: 20 }}>

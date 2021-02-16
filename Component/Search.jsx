@@ -21,17 +21,46 @@ import {
   Input,
   ActionSheet,
 } from "native-base";
+import { SearchBar } from "react-native-elements";
 
 export class Search extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+  state = {
+    search: "",
+  };
+
+  updateSearch = (search) => {
+    this.setState({ search });
+  };
 
   render() {
+    const { search } = this.state;
+
     return (
       <Container style={{ justifyContent: "center" }}>
         <Content style={{ marginTop: 40 }}>
+          <SearchBar
+            lightTheme="true"
+            placeholder="Type Here..."
+            onChangeText={this.updateSearch}
+            value={search}
+            style={{
+              borderBottomColor: "red",
+              borderBottomWidth: 2,
+              // backgroundColor: "#fff",
+              // color: "red",
+            }}
+            // reverseColor="#fff"
+            // iconStyle={{ backgroundColor: "#fff" }}
+            // containerStyle={{ backgroundColor: "#fff" }}
+            // inputStyle={{ backgroundColor: "#fff" }}
+            // containerStyle={{ backgroundColor: "blue" }}
+            inputStyle={{ backgroundColor: "red" }}
+            // iconStyle={{ backgroundColor: "green" }}
+            inputStyle={{ backgroundColor: "#fff", borderColor: "#fff" }}
+            containerStyle={{ backgroundColor: "#fff", borderColor: "#fff" }}
+            placeholderTextColor="#000"
+            leftIconContainerStyle={{ backgroundColor: "#fff" }}
+          />
           <Item
             success
             style={{
@@ -96,6 +125,7 @@ export class Search extends Component {
     );
   }
 }
+
 export default function (props) {
   const navigation = useNavigation();
   return <Search {...props} navigation={navigation} />;

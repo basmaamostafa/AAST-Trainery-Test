@@ -17,10 +17,19 @@ const Stack = createStackNavigator();
 
 export default class App extends Component {
   render() {
-    return <Tutorial3 />;
+    // return <Tutorial3 />;
     return (
       <NavigationContainer>
         <Stack.Navigator>
+          {/* <Stack.Screen
+            name="Tutorial3"
+            component={Tutorial3}
+            options={{
+              header: () => {
+                "none";
+              },
+            }}
+          /> */}
           <Stack.Screen
             name="Explore"
             component={Explore}
