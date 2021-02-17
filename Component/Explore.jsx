@@ -28,7 +28,7 @@ import { useNavigation } from "@react-navigation/native";
 
 export class Explore extends Component {
   render() {
-    return <Search style={{ backgroundColor: "#ffffff" }} />;
+    // return <Search style={{ backgroundColor: "#ffffff" }} />;
 
     return (
       <Container style={{ marginBottom: 20 }}>

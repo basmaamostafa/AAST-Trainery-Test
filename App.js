@@ -17,7 +17,7 @@ const Stack = createStackNavigator();
 
 export default class App extends Component {
   render() {
-    // return <Tutorial3 />;
+    // return <Explore />;
     return (
       <NavigationContainer>
         <Stack.Navigator>
