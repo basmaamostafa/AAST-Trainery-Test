@@ -21,6 +21,13 @@ import {
   Input,
   ActionSheet,
 } from "native-base";
+import {
+  createDrawerNavigator,
+  DrawerContentScrollView,
+  DrawerItemList,
+  DrawerItem,
+} from "@react-navigation/drawer";
+
 import { SearchBar } from "react-native-elements";
 
 export class Search extends Component {
@@ -38,6 +45,11 @@ export class Search extends Component {
     return (
       <Container style={{ justifyContent: "center" }}>
         <Content style={{ marginTop: 40 }}>
+          <View
+            style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
+          >
+            <Text>Notifications Screen</Text>
+          </View>
           <SearchBar
             lightTheme="true"
             placeholder="Type Here..."
@@ -53,7 +65,7 @@ export class Search extends Component {
             // iconStyle={{ backgroundColor: "#fff" }}
             // containerStyle={{ backgroundColor: "#fff" }}
             // inputStyle={{ backgroundColor: "#fff" }}
-            // containerStyle={{ backgroundColor: "blue" }}
+            // containerStyle={{ backgroundColor: "blue" }}drawerContent={props => <CustomDrawerContent {...props} />}
             inputStyle={{ backgroundColor: "red" }}
             // iconStyle={{ backgroundColor: "green" }}
             inputStyle={{ backgroundColor: "#fff", borderColor: "#fff" }}
